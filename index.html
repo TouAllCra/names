@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="免费日本名字生成器 - 获取authentic的日语名字，包含汉字、罗马字写法和含义解释。">
+  <meta name="keywords" content="日本名字生成器,Japanese name generator,日语名字,日本文化,名字含义,名字解释,日文名字,中文名字,英文名字">
+  <meta name="author" content="Your Name">
+  <meta name="robots" content="index, follow">
+  <title>日本名字生成器 | 免费获取authentic日语名字</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    window.onerror = function(message, source, lineno, colno, error) {
+      console.error("捕获到错误:", message, "在", source, "第", lineno, "行");
+      alert("抱歉，发生了一个错误。请查看控制台以获取更多信息。");
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "日本名字生成器",
+    "url": "https://yourwebsite.com",
+    "description": "免费日本名字生成器 - 获取authentic的日语名字，包含汉字、罗马字写法和含义解释。",
+    "keywords": "日本名字生成器,Japanese name generator,日语名字,日本文化,名字含义,名字解释,日文名字,中文名字,英文名字",
+    "author": {
+      "@type": "Person",
+      "name": "Your Name"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1 id="title">日本名字生成器</h1>
+    <p id="subtitle">获取authentic的日语名字，了解其含义和文化背景</p>
+    <div id="language-switcher">
+      <button onclick="switchLanguage('zh')">中文</button>
+      <button onclick="switchLanguage('en')">English</button>
+      <button onclick="switchLanguage('ja')">日本語</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="name-generator">
+      <h2 id="generator-title">日本名字生成器</h2>
+      <label for="gender" id="gender-label">选择性别:</label>
+      <select id="gender">
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+      </select>
+      <label for="period" id="period-label">选择历史时期:</label>
+      <select id="period">
+        <option value="">随机时期</option>
+        <option value="平安">平安时代</option>
+        <option value="鎌倉">镰仓时代</option>
+        <option value="室町">室町时代</option>
+        <option value="戦国">战国时代</option>
+        <option value="江戸">江户时代</option>
+        <option value="明治">明治时代</option>
+        <option value="大正">大正时代</option>
+        <option value="昭和">昭和时代</option>
+        <option value="平成">平成时代</option>
+        <option value="令和">令和时代</option>
+      </select>
+      <button id="generate">生成名字</button>
+    </div>
+
+    <div id="name-display">
+      <h3 id="generated-names-title">生成的名字:</h3>
+      <ul id="name-list"></ul>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="name-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="name-details-title">名字详情</h3>
+        <p><span id="label-name-kanji">全名（汉字）: </span><span id="name-kanji"></span></p>
+        <p><span id="label-name-romaji">全名（罗马字）: </span><span id="name-romaji"></span></p>
+        <p><span id="label-name-meaning">名字寓意: </span><span id="name-meaning"></span></p>
+        <p><span id="label-name-surname">姓氏: </span><span id="name-surname"></span></p>
+        <p><span id="label-name-given">名: </span><span id="name-given"></span></p>
+        <p><span id="label-name-period">历史时期: </span><span id="name-period"></span></p>
+        <p><span id="label-historical-context">历史背景: </span><span id="historical-context"></span></p>
+        <p><span id="label-name-cultural-significance">文化意义: </span><span id="name-cultural-significance"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2023 日本名字生成器. 保留所有权利。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
